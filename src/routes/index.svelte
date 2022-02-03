@@ -20,6 +20,7 @@
 	import PopularMovies from '../components/PopularMovies.svelte';
 
 	export let popular;
+	//the import below is working but thinking this is not the way to do the font??
 </script>
 
 <section>

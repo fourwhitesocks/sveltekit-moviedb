@@ -19,11 +19,11 @@
 
 <script>
 	export let movieDetail;
-	//can extract any other info from below console.log and concatinate it afer movieDetail
+	//can extract any other info from below console.log/movidDetail and concatinate it afer movieDetail
 	console.log(movieDetail);
 </script>
 
-<h1>stopped 46.51</h1>
+<h1>stopped 54.57</h1>
 <div class="movie-details">
 	<div class="img-container">
 		<img
@@ -34,5 +34,38 @@
 	<div class="txt-contaier">
 		<h1>{movieDetail.title}</h1>
 		<h2>{movieDetail.tagline}</h2>
+
+		<p>
+			<span> Release Date: </span>{movieDetail.release_date} <br />
+			<!-- little confusing but the $ below is not for an expression it is for actually money  -->
+			<span>Budget: </span> ${movieDetail.budget}<br />
+			<span>Rating:</span>{movieDetail.vote_average}<br />
+			<span>Runtime:</span>{movieDetail.runtime}mins
+		</p>
 	</div>
 </div>
+
+<style>
+	h1 {
+		padding: 1rem 0rem 2rem;
+	}
+
+	p {
+		padding: 1rem 0rem;
+	}
+
+	.img-container {
+		width: 100;
+	}
+	img {
+		width: 100%;
+		border-radius: 1rem;
+	}
+	.movie-details {
+		margin: 2rem 20%;
+	}
+
+	span {
+		font-weight: bold;
+	}
+</style>
